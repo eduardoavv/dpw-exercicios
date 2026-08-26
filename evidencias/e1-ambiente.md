@@ -13,7 +13,7 @@ Saída:
 PS C:\dev\dpw-exercicios> Remove-Item -Recurse -Force node_modules
 PS C:\dev\dpw-exercicios>
 
-2. Instalação com lockfile congelado
+### 2. Instalação com lockfile congelado
 
 Comando:
 
@@ -37,7 +37,7 @@ devDependencies:
 Done in 580ms using pnpm v11.24.0
 PS C:\dev\dpw-exercicios>
 
-3. Verificação do Git
+### 3. Verificação do Git
 
 Comando:
 
@@ -51,3 +51,13 @@ Saída:
 ?? evidencias/
 ?? package.json
 ?? pnpm-lock.yaml
+
+O pnpm-lock.yaml não aparece como modificado (M), mostrando que a instalação com --frozen-lockfile não alterou o lockfile.
+
+## Link permanente para o .gitignore
+
+https://github.com/eduardoavv/dpw-exercicios/blob/3cc8585/.gitignore
+
+## Por que o pnpm-lock.yaml é versionado e o node_modules não?
+
+O pnpm-lock.yaml é versionado para garantir que todas as pessoas instalem as mesmas versões exatas das dependências. O node_modules não é versionado porque é uma pasta gerada localmente pelo gerenciador de pacotes e pode ser recriada usando o pnpm install.
