@@ -3,7 +3,6 @@
 
 **Nome:** Eduardo Artur
 **Ambiente:** Windows + PowerShell
-TESTE E00.4 - STAGE
 
 | #   | Exercício                | Evidência                                                    |
 | --- | ------------------------ | ------------------------------------------------------------ |
